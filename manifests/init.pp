@@ -1,5 +1,5 @@
 class redwoodtest {
 
- notify { 'Hello World':}
+ notify { 'Hello World, round 2':}
 
 }
