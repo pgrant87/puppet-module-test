@@ -1,4 +1,4 @@
-#!/opt/microsoft/powershell/7/pwsh
+#!/usr/bin/pwsh
 $password    = $args[0]
 $dateMonth   = Get-Date -Format "MMMM"
 $serverArray = $args[1]
