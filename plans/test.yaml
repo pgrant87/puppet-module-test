@@ -1,10 +1,10 @@
 parameters: 
-  servers: 
+  targets: 
     type: TargetSpec
 
 steps: 
   - 
     description: "test plan. Get health of agent"
-    target: $servers
+    target: $targets
     task: "pe_patch::agent_health"
     
