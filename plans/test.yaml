@@ -5,6 +5,6 @@ parameters:
 steps: 
   - 
     description: "test plan. Get health of agent"
-    target: $targets
+    targets: $targets
     task: "pe_patch::agent_health"
     
