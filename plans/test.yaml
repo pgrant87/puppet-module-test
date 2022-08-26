@@ -1,10 +1,10 @@
-parameters:
-  targets:
+parameters: 
+  servers: 
     type: TargetSpec
-steps:
-  - name: loop
-    eval: |
-      $targets.each |$t| {
-        out::message($t)
-        run_task('facts', $t)
-      } 
+
+steps: 
+  - 
+    description: "test plan. Get health of agent"
+    target: $servers
+    task: "pe_patch::agent_health"
+    
