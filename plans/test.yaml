@@ -1,9 +1,10 @@
----
-description: "test yaml plan"
+parameters:
+  targets:
+    type: TargetSpec
 steps:
-  - command: hostname -f
-    target:
-      - web1.example.com
-      - web2.example.com
-      - web3.example.com
-    description: "Get the webserver hostnames"
+  - name: loop
+    eval: |
+      $targets.each |$t| {
+        out::message($t)
+        run_task('facts', $t)
+      } 
