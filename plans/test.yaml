@@ -1,3 +1,5 @@
+---
+description: "test yaml plan"
 steps:
   - command: hostname -f
     target:
