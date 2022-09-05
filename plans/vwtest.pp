@@ -1,7 +1,5 @@
-plan vwtest () {
-  out::message('hello world')
+plan vwtest(
+  $targets
+) {
+  return run_task('facter_task', $targets)
 }
-# plan vwtest(TargetSpec $targets) {
-  # This collects facts on targets and updates the inventory
-#  run_task('facter_task', 'targets' => $targets)
-# }
