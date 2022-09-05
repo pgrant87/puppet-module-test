@@ -1,3 +1,3 @@
-plan redwoodtest::vwtest {
-  return run_task('facter_task', 'PE Master')
+plan redwoodtest::vwtest ($targets) {
+  return run_task('facter_task', $targets)
 }
