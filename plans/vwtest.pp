@@ -1,4 +1,4 @@
 plan redwoodtest::vwtest ($targets) {
-  return "This is a test"
+  return "${test_key}"
   #return run_task('facter_task', $targets)
 }
