@@ -1,5 +1,10 @@
 class redwoodtest {
 
- notify { 'Hello World, round 2':}
+$myhash = {'test' => 'val'}
+
+file { '/tmp/config.toml':
+  ensure  => file,
+  content => to_toml($myhash),
+}
 
 }
