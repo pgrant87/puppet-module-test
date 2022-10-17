@@ -1,4 +1,6 @@
-class redwoodtest {
+class redwoodtest (
+  String             $envtestvar,
+){
 
 $test = lookup('envtestvar')
 notify{"The value is: $test": }
