@@ -1,4 +1,4 @@
-class redwoodtest (
+class redwoodtest {
 
 file { '/etc/test.txt':
   source => [
