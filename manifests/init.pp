@@ -1,9 +1,9 @@
 class redwoodtest {
 
-file { '/etc/test.txt':
-  source => [
-    'puppet:///modules/redwoodtest/test.txt'
-  ]
-}
+user { pgtest:
+             password => Sensitive(
+                pw_hash('test', 'SHA-512', 'test')
+            ),
+        }
 
 }
