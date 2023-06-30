@@ -14,49 +14,49 @@ user { pgtest1:
 
 user { pgtest2:
              password => Sensitive(
-                pw_hash($testpassword, 'SHA-512', $testsalt)
+                pw_hash($testpassword, 'SHA-512', 'saltysalt')
             ),
         }
 
 user { pgtest3:
              password => Sensitive(
-                pw_hash($testpassword, 'SHA-512', $testsalt)
+                pw_hash($testpassword, 'SHA-512', 'saltysalt')
             ),
         }
 
 user { pgtest4:
              password => Sensitive(
-                pw_hash($testpassword, 'SHA-512', $testsalt)
+                pw_hash($testpassword, 'SHA-512', 'saltysalt')
             ),
         }
 
 user { pgtest5:
              password => Sensitive(
-                pw_hash($testpassword, 'SHA-512', $testsalt)
+                pw_hash($testpassword, 'SHA-512', 'saltysalt')
             ),
         }
 
 user { pgtest6:
              password => Sensitive(
-                pw_hash($testpassword, 'SHA-512', $testsalt)
+                pw_hash($testpassword, 'SHA-512', 'saltysalt')
             ),
         }
 
 user { pgtest7:
              password => Sensitive(
-                pw_hash($testpassword, 'SHA-512', $testsalt)
+                pw_hash($testpassword, 'SHA-512', 'saltysalt')
             ),
         }
 
 user { pgtest8:
              password => Sensitive(
-                pw_hash($testpassword, 'SHA-512', $testsalt)
+                pw_hash($testpassword, 'SHA-512', 'saltysalt')
             ),
         }
 
 user { pgtest9:
              password => Sensitive(
-                pw_hash($testpassword, 'SHA-512', $testsalt)
+                pw_hash($testpassword, 'SHA-512', 'saltysalt')
             ),
         }
 
