@@ -8,7 +8,7 @@ user { pgtest:
 
 user { pgtest1:
              password => Sensitive(
-                pw_hash($testpassword, 'SHA-512', $testsalt)
+                pw_hash($testpassword, 'SHA-512', 'saltysalt')
             ),
         }
 
