@@ -1,6 +1,6 @@
 class redwoodtest {
 
-vcsrepo { '/root/airbyte/':
+vcsrepo { 'opt/src/airbyte':
   ensure   => present,
   provider => git,
   source   => 'https://github.com/airbytehq/airbyte.git',
