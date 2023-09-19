@@ -24,7 +24,7 @@ class redwoodtest {
     }
 
     exec {runinstallscript:
-    command => ['/bin/bash', 'run-ab-platform.sh'],
+    command => ['/bin/bash', 'run-ab-platform.sh > /dev/null 2>&1'],
     cwd     => '/tmp/airbyte',
     require => Vcsrepo['airbyte repo'],
     timeout => 0,
