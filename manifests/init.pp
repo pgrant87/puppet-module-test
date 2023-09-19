@@ -1,4 +1,4 @@
-class test {
+class redwoodtest {
 
     # You can use this class to deploy Airbyte on a server.
 
@@ -29,6 +29,4 @@ class test {
     require => Vcsrepo['airbyte repo'],
     timeout => 0,
     }
-
-
 }
